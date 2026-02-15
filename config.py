@@ -20,9 +20,8 @@ WINDOW_LOG_FILE = LOGS_DIR / "windows.log"
 MOUSE_LOG_FILE = LOGS_DIR / "mouse.log"
 
 # Logging settings
-LOG_INTERVAL = 60  # seconds - how often to flush logs to disk
+LOG_INTERVAL = 60  # seconds - how often to log system activity
 WINDOW_CHECK_INTERVAL = 1  # seconds - how often to check active window
-ENCRYPTION_ENABLED = True  # Enable encryption for sensitive data
 
 # Security settings
 LOG_RETENTION_DAYS = 30  # days to keep logs before auto-deletion

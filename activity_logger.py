@@ -11,9 +11,9 @@ import config
 class ActivityLogger:
     """Monitors and logs system activity"""
     
-    def __init__(self, log_file=None, check_interval=60):
+    def __init__(self, log_file=None, log_interval=60):
         self.log_file = log_file or config.ACTIVITY_LOG_FILE
-        self.check_interval = check_interval
+        self.log_interval = log_interval
         self.running = False
         self.thread = None
         
@@ -81,7 +81,7 @@ class ActivityLogger:
             if activity_info:
                 self.log_activity(activity_info)
             
-            time.sleep(self.check_interval)
+            time.sleep(self.log_interval)
     
     def start(self):
         """Start the activity logger"""

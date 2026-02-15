@@ -24,7 +24,7 @@ class ActivityMonitor:
         self.keylogger = KeyLogger()
         self.mouse_logger = MouseLogger()
         self.window_logger = WindowLogger()
-        self.activity_logger = ActivityLogger(check_interval=config.LOG_INTERVAL)
+        self.activity_logger = ActivityLogger(log_interval=config.LOG_INTERVAL)
         self.running = False
         
     def start(self):
