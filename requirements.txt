@@ -1,0 +1,4 @@
+pynput>=1.7.6
+psutil>=5.9.0
+pywin32>=305
+cryptography>=46.0.5
